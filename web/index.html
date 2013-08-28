@@ -1,0 +1,175 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<meta http-equiv="refresh" content="10">-->
+        <style>
+            
+            @keyframes whiteToBlack{
+                0% {opacity:0;}
+                75% {opacity:0;}
+                100% {opacity:1;}
+            }
+            
+            @keyframes slideIn{
+                0%{margin-left:100%;}
+                50%{margin-left:100%; opacity:0;}
+                100%{margin-left:0;}
+            }
+            
+            @keyframes modifyWidth{
+                from {width:0px; opacity:0;}
+                to {width:680px;}
+            }
+            
+            
+            body{
+                width:680px;
+                padding-left:20px;
+                padding-top:10px;
+                display:block;
+            }
+            
+            .title{
+                font-family:Cambria;
+                font-weight:bold;
+                font-variant:small-caps;
+                font-size:16pt;
+                border-bottom: 1px solid black;
+                text-align:center;
+                margin-bottom:10px;
+                padding-bottom:4px;
+                overflow:hidden;
+                
+                animation-name: modifyWidth;
+                animation-duration: 2s;
+                animation-delay:0;
+                animation-iteration-count: 1;
+            }
+            
+            .info{
+                /*animation-name: whiteToBlack;*/
+                display:block;
+                width:670px;
+                padding-left:10px;
+                
+                animation-name:slideIn;
+                animation-duration: 4s;
+                animation-delay:0;
+                animation-iteration-count: 1;
+            }
+            
+            .main-title{
+                font-size:20pt;
+                text-align:left;
+            }
+            
+            .left{
+                float:left;
+                clear:left;
+            }
+            
+            .right{
+                float:right;
+                clear:right;
+                width:200px;
+                text-align:right;
+            }
+            
+            .knowledge .right{
+                width:50%;
+                text-align:left;
+            }
+            
+            .section{
+                margin-bottom:20px;
+                overflow:hidden;
+            }
+            
+            .employmentHistory{
+                text-align:left;
+                clear:left;
+            }
+            
+            .subtitle{
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="section">
+            <div class="name title main-title">Joseph&nbsp;Rankin</div>
+            <div class="info personal">302 Buena Vista Avenue, Waukesha, WI 53188 • 262.893.5763 • jrankin2@my.wctc.edu</div>
+        </div>
+        
+        <div class="section">
+            <div class="title">Web&nbsp;&&nbsp;Software&nbsp;Developer</div>
+            <div class="info summary">Talented software and web application developer with strong educational background in programming. Articulate and professional communication skills, including formal presentations and technical documentation. Productive in both team-based and self-managed environments. Dedicated to maintaining up-to-date industry knowledge and IT skills.</div>
+        </div>
+        
+        <div class="section knowldege">
+            <div class="title">Knowledge&nbsp;&&nbsp;Skill&nbsp;Areas</div>
+            <div class="info knowledge">
+                <div class="left"><!-- change to lists?-->
+                    Java SE 7<br/>
+                    MS SQL Server, SQL, and T-SQL<br/>
+                    ASP.NET C# MVC and Web API</div>
+                <div class="right">
+                    HTML, CSS, JS, and jQuery<br/>
+                    VB.NET<br/>
+                    XML & JSON</div>
+            </div>
+        </div>
+        
+        <div class="section education">
+            <div class="title">Education</div>
+            <div class="info">
+                <div class="left">
+                    Waukesha County Technical College<br/>
+                    <span class="subtitle">Associate of IT - Web & Software Developer</span>
+                </div>
+                <div class="right">
+                    Pewaukee, WI<br/>
+                    Anticipated December 2013
+                </div>
+            </div>
+        </div>
+        
+        <div class="section employmentHistory">
+            <div class="title">Employment&nbsp;History</div>
+            <div class="info">
+                <div class="left">
+                    Waukesha County Technical College<br/>
+                    <span class="subtitle">Web & Mobile Application Developer - Internship</span>
+                </div>
+                <div class="right">
+                    Pewaukee, WI<br/>
+                    June 2013 - August 2013
+                </div>
+                <br/><br/>
+                <div>
+                    <ul>
+                        <li>Designed an iOS app to manage clinical/field experiences for ~75 students.</li>
+                        <li>Designed a website using ASP.NET C# MVC to manage clinical/field experience reports for ~75 students.</li>
+                        <li>Designed a MS SQL Server database and migrated data from an existing MS Access database.</li>
+                    </ul>
+                </div>
+                <div class="left">
+                    Hamilton School District <br/>
+                    <span class="subtitle">Substitute Custodian</span>
+                </div>
+                <div class="right">
+                    Sussex, WI<br/>
+                    May 2012 - Present
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
